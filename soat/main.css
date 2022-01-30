@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*::after, *::before {
+	box-sizing: border-box;
+	font-family: Audiowide, sans-serif;
+}
+:root {
+	--primary-color: #fff;
+	--secondary-color: black;
+	--third-color: lightgrey;
+}
+.dark-theme {
+	--color1: #000000;
+	--secondary-color: #fff;
+	--third-color: #212121;
+}
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin-right: 40px;
+}
+nav {
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+}
+.wrap {
+	background-color: var(--color1);
+	min-height: 100vh;
+	overflow: hidden;
+}
+.asosiy {
+	width: 300px;
+	margin-top: 50px;
+	margin-left: 100px;
+	font-weight: bold;
+	font-size: 25px;
+	height: 300px;
+	background-color: var(--third-color);
+	color: var(--secondary-color);
+	border-radius: 50%;
+	border: 15px solid var(--secondary-color);
+	position: relative;
+}
+.asosiy .raqam {
+	--rotation: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transform: rotate(var(--rotation));
+}
+.asosiy .raqam1 {
+	--rotation: 30deg;
+}
+.asosiy .raqam2 {
+	--rotation: 60deg;
+}
+.asosiy .raqam3 {
+	--rotation: 90deg;
+}
+.asosiy .raqam4 {
+	--rotation: 120deg;
+}
+.asosiy .raqam5 {
+	--rotation: 150deg;
+}
+.asosiy .raqam6 {
+	--rotation: 180deg;
+}
+.asosiy .raqam7 {
+	--rotation: 210deg;
+}
+.asosiy .raqam8 {
+	--rotation: 240deg;
+}
+.asosiy .raqam9 {
+	--rotation: 270deg;
+}
+.asosiy .raqam10 {
+	--rotation: 300deg;
+}
+.asosiy .raqam11 {
+	--rotation: 330deg;
+}
+.asosiy .mil {
+	--rotation: 0;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	width: 10px;
+	height: 148px;
+	background: var(--secondary-color);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform-origin: bottom;
+	z-index: 10;
+	transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+.asosiy::after {
+	content: '';
+	position: absolute;
+	background-color: var(--secondary-color);
+	z-index: 11;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.asosiy .mil.sekund {
+	width: 5px;
+	height: 45%;
+	background-color: rgba(288, 8, 8);
+	border: 1px solid var(--secondary-color);
+}
+.asosiy .mil.minut {
+	width: 7px;
+	height: 42%;
+	background-color: darkblue;
+	border: 1px solid var(--secondary-color);
+}
+.asosiy .mil.soat {
+	width: 8px;
+	height: 38%;
+	background-color: #fdd017;
+	border: 1px solid var(--secondary-color);
+}
